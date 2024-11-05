@@ -63,7 +63,7 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromRight(0.8)}
-          className="w-full h-full flex justify-center items-center"
+          className="w-full h-full flex justify-center items-center max-md:hidden"
         >
           <Image
             src="/mainIconsdark.svg"

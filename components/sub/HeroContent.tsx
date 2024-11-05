@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 const HeroContent = () => {
   return (
     <div>
@@ -52,10 +53,11 @@ const HeroContent = () => {
 
           <motion.a
             variants={slideInFromLeft(1)}
-            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] flex items-center justify-center"
+            className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] flex items-center justify-center z-40"
+            href="https://drive.google.com/file/d/1az3tRb4_foPRjNGbYs_0ASK919Ph9rnA/view?usp=sharing"
           >
             <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-            My Resume
+            My Resume{" "}
           </motion.a>
         </div>
 

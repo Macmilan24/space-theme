@@ -13,7 +13,7 @@ const Projects = () => {
       title: "Apple Website Clone",
       description:
         "This project is a pixel-perfect clone of the Apple website, showcasing the sleek design and refined aesthetics Apple is known for. Built with the latest web technologies, it includes responsive layouts, smooth animations, and interactive elements that replicate the look and feel of the official Apple site.",
-      link: "#",
+      link: "https://apple-uk-clone.vercel.app/",
     },
     {
       src: "/emp.png",

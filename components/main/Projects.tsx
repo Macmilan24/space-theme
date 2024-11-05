@@ -47,7 +47,7 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         {projects.slice(0, 3).map((project, index) => (
-          <div key={index} className=" w-1/3 flex flex-col ">
+          <div key={index} className=" w-full md:w-1/3 flex flex-col ">
             <ProjectCard
               src={project.src}
               title={project.title}

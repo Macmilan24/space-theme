@@ -1,12 +1,7 @@
-"use client";
 import React from "react";
-import ProjectCard from "../sub/ProjectCard";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
+import ProjectCard from "@/components/sub/ProjectCard";
 
-const Projects = () => {
-  const router = useRouter();
-
+const FullProjectsPage = () => {
   const projects = [
     {
       src: "/apple.png",
@@ -33,43 +28,23 @@ const Projects = () => {
     // Add more projects here as needed
   ];
 
-  const handleViewMore = () => {
-    router.push("/projects"); // Navigate to full projects page
-  };
-
   return (
-    <div
-      id="projects"
-      className="flex flex-col items-center justify-center py-20"
-    >
+    <div className="flex flex-col items-center justify-center py-20">
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        My Projects
+        All Projects
       </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        {projects.slice(0, 3).map((project, index) => (
-          <div key={index} className=" w-1/3 flex flex-col ">
-            <ProjectCard
-              src={project.src}
-              title={project.title}
-              description={project.description}
-            />
-            <Link
-              href={project.link}
-              className=" Welcome-box py-[8px] px-[17px] border border-[#7042f88b] opacity-[0.9] text-white mt-5 z-40"
-            >
-              See More
-            </Link>
-          </div>
+      <div className="h-full w-full flex flex-col md:flex-row flex-wrap gap-10 px-10 justify-center items-center">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            src={project.src}
+            title={project.title}
+            description={project.description}
+          />
         ))}
       </div>
-      <button
-        onClick={handleViewMore}
-        className="mt-10 px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 z-50"
-      >
-        View More
-      </button>
     </div>
   );
 };
 
-export default Projects;
+export default FullProjectsPage;

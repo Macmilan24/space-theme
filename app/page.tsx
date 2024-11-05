@@ -16,3 +16,7 @@ export default function Home() {
     </main>
   );
 }
+
+// https://github.com/Macmilan24/space-theme, here is the repo link just for now analysis this and tell me what you understand
+
+// first thing i need you to do is update the hero i don't like the blackhole video so can you create something that will look cool like that follows the cursor type of thing
